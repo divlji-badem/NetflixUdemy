@@ -10,6 +10,8 @@ import SwiftUI
 struct HomeView: View {
     
     var vm = HomeVM()
+    //velicina ekrana
+    let screen = UIScreen.main.bounds
     
     var body: some View {
         ZStack {
@@ -18,6 +20,9 @@ struct HomeView: View {
             
             ScrollView(showsIndicators: false) {
                 LazyVStack {
+                    TopMoviePreview(movie: GlobalHelpers.exampleMovie10)
+                        .frame(width: screen.width)
+                        .padding(.top, -110)
                     ForEach(vm.allCategories, id: \.self) { category in
                         VStack {
                             HStack {
@@ -46,5 +51,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+.previewInterfaceOrientation(.portrait)
     }
 }

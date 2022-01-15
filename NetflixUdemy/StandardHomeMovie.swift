@@ -20,6 +20,6 @@ struct StandardHomeMovie: View {
 
 struct StandardHomeMovie_Previews: PreviewProvider {
     static var previews: some View {
-        StandardHomeMovie(movie: GlobalHelpers.exampleMovie1)
+        StandardHomeMovie(movie: GlobalHelpers.exampleMovie2)
     }
 }
