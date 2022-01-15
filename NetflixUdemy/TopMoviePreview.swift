@@ -22,12 +22,13 @@ struct TopMoviePreview: View {
     }
     
     var body: some View {
-        ZStack{
+        ZStack {
             KFImage(movie.thumbnailURL)
                 .resizable()
                 .scaledToFill()
                 .clipped()
-            VStack{
+            
+            VStack {
                 Spacer()
                 
                 HStack {
@@ -43,26 +44,36 @@ struct TopMoviePreview: View {
                     }
                 }
                 
-                HStack {
-                    Spacer()
-                    SmallVerticalButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
-                        //
-                    }
+                HStack {                    
                     Spacer()
                     
-                    WhiteButton(text: "Play", imageName: "play.fill") {
+                    SmallVerticalButton(text: "My List",
+                                        isOnImage: "checkmark",
+                                        isOffImage: "plus",
+                                        isOn: true) {
+                        //
+                    }
+                    
+                    Spacer()
+                    
+                    WhiteButton(text: "Play",
+                                imageName: "play.fill") {
                         //
                     }.frame(width:120)
                     
                     Spacer()
-                    SmallVerticalButton(text: "Info", isOnImage: "info.circle", isOffImage: "info.circle", isOn: true) {
+                    SmallVerticalButton(text: "Info",
+                                        isOnImage: "info.circle",
+                                        isOffImage: "info.circle",
+                                        isOn: true) {
                         // detail screan
                     }
+                    
                     Spacer()
                 }
-                
             }
-            
+            .background(LinearGradient.blackOpacityGradient)
+            .padding(.top, 250)
         }.foregroundColor(.white)
     }
 }
