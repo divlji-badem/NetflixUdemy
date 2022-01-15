@@ -30,15 +30,22 @@ struct MovieDetail: View {
                     VStack {
                         StandardHomeMovie(movie: movie)
                             .frame(width: screen.width / 2.5)
+                        
                         MovieInfoSubHeadline(movie: movie)
+                        
                         if let promotionHeadline = movie.promotionHeadline {
                             Text(promotionHeadline)
                                 .bold()
                                 .font(.headline)
                         }
+                        
                         PlayButton(text: "Play", imageName: "play.fill", backgroundColor: .red) {
                             //
                         }.padding(.horizontal, 20)
+                        
+                        CurrentEpisodeInformation(movie: movie)
+                        
+                        CastInfo(movie: movie)
                         
                     }
                 }
@@ -80,5 +87,45 @@ struct ReitingView: View {
                 .bold()
         }
         .frame(width: 50, height: 20)
+    }
+}
+
+struct CastInfo: View {
+    var movie: Movie
+    
+    var body: some View {
+        VStack(spacing: 3) {
+            HStack {
+                Text("Cast: \(movie.cast)")
+                Spacer()
+            }
+            HStack {
+                Text("Creators: \(movie.creators)")
+                Spacer()
+            }
+        }
+        .font(.caption)
+        .foregroundColor(.gray)
+        .padding(.vertical, 10)
+    }
+}
+
+struct CurrentEpisodeInformation: View {
+    var movie: Movie
+    
+    var body: some View {
+        Group {
+            HStack {
+                Text(movie.episodeInfoDisplayed).bold()
+                Spacer()
+            }
+            .padding(.vertical, 4)
+            
+            HStack {
+                Text(movie.episodeDescriptionDisplayed)
+                    .font(.subheadline)
+                Spacer()
+            }
+        }
     }
 }

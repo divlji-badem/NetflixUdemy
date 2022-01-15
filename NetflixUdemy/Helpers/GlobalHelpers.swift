@@ -18,7 +18,10 @@ extension GlobalHelpers {
         categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"],
         year: 2020,
         rating: "TV-MA",
-        numberOfSeasons: 1
+        numberOfSeasons: 1,
+        defaultEpisodeInfo: exampleEpisodeInfo1,
+        creators: "Bran Bo Odan, Jantje Friese",
+        cast: "Louis Hofman, Oliver Masucci, Jordis Triebel"
     )
     static let exampleMovie2 = Movie(
         id: UUID().uuidString,
@@ -28,6 +31,9 @@ extension GlobalHelpers {
         year: 2020,
         rating: "TV-MA",
         numberOfSeasons: 2,
+        defaultEpisodeInfo: exampleEpisodeInfo1,
+        creators: "Bran Bo Odan, Jantje Friese",
+        cast: "Louis Hofman, Oliver Masucci, Jordis Triebel",
         promotionHeadline: "Best Rated Show"
     )
     
@@ -38,7 +44,9 @@ extension GlobalHelpers {
         categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"],
         year: 2020,
         rating: "TV-MA",
-        numberOfSeasons: 3
+        numberOfSeasons: 3, defaultEpisodeInfo: exampleEpisodeInfo1,
+        creators: "Bran Bo Odan, Jantje Friese",
+        cast: "Louis Hofman, Oliver Masucci, Jordis Triebel"
     )
     static let exampleMovie4 = Movie(
         id: UUID().uuidString,
@@ -48,6 +56,9 @@ extension GlobalHelpers {
         year: 2020,
         rating: "TV-MA",
         numberOfSeasons: 4,
+        defaultEpisodeInfo: exampleEpisodeInfo1,
+        creators: "Bran Bo Odan, Jantje Friese",
+        cast: "Louis Hofman, Oliver Masucci, Jordis Triebel",
         promotionHeadline: "New episodes coming soon"
     )
     static let exampleMovie5 = Movie(
@@ -57,7 +68,10 @@ extension GlobalHelpers {
         categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"],
         year: 2020,
         rating: "TV-MA",
-        numberOfSeasons: 5
+        numberOfSeasons: 5,
+        defaultEpisodeInfo: exampleEpisodeInfo1,
+        creators: "Bran Bo Odan, Jantje Friese",
+        cast: "Louis Hofman, Oliver Masucci, Jordis Triebel"
     )
     static let exampleMovie6 = Movie(
         id: UUID().uuidString,
@@ -67,6 +81,9 @@ extension GlobalHelpers {
         year: 2020,
         rating: "TV-MA",
         numberOfSeasons: 6,
+        defaultEpisodeInfo: exampleEpisodeInfo1,
+        creators: "Bran Bo Odan, Jantje Friese",
+        cast: "Louis Hofman, Oliver Masucci, Jordis Triebel",
         promotionHeadline: "Whatch Season 6 Now"
     )
     static let exampleMovie7 = Movie(
@@ -75,7 +92,10 @@ extension GlobalHelpers {
         thumbnailURL: URL(string: "https://picsum.photos/200/307")!,
         categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"],
         year: 2020,
-        rating: "TV-MA"
+        rating: "TV-MA",
+        defaultEpisodeInfo: exampleEpisodeInfo1,
+        creators: "Bran Bo Odan, Jantje Friese",
+        cast: "Louis Hofman, Oliver Masucci, Jordis Triebel"
     )
     static let exampleMovie8 = Movie(
         id: UUID().uuidString,
@@ -83,7 +103,10 @@ extension GlobalHelpers {
         thumbnailURL: URL(string: "https://picsum.photos/200/308")!,
         categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"],
         year: 2020,
-        rating: "TV-MA"
+        rating: "TV-MA",
+        defaultEpisodeInfo: exampleEpisodeInfo1,
+        creators: "Bran Bo Odan, Jantje Friese",
+        cast: "Louis Hofman, Oliver Masucci, Jordis Triebel"
     )
     static let exampleMovie9 = Movie(
         id: UUID().uuidString,
@@ -91,7 +114,10 @@ extension GlobalHelpers {
         thumbnailURL: URL(string: "https://picsum.photos/200/309")!,
         categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"],
         year: 2020,
-        rating: "TV-MA"
+        rating: "TV-MA",
+        defaultEpisodeInfo: exampleEpisodeInfo1,
+        creators: "Bran Bo Odan, Jantje Friese",
+        cast: "Louis Hofman, Oliver Masucci, Jordis Triebel"
     )
     static let exampleMovie10 = Movie(
         id: UUID().uuidString,
@@ -99,7 +125,10 @@ extension GlobalHelpers {
         thumbnailURL: URL(string: "https://picsum.photos/200/310")!,
         categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"],
         year: 2020,
-        rating: "TV-MA"
+        rating: "TV-MA",
+        defaultEpisodeInfo: exampleEpisodeInfo1,
+        creators: "Bran Bo Odan, Jantje Friese",
+        cast: "Louis Hofman, Oliver Masucci, Jordis Triebel"
     )
     static let examples = [
         exampleMovie1,
@@ -113,6 +142,12 @@ extension GlobalHelpers {
         exampleMovie9,
         exampleMovie10
     ]
+    
+    static let exampleEpisodeInfo1 = CurrentEpisodeInfo(
+        episodeName: "Beginnings and Ending",
+        description: "Sixs months after the disapppearances, the police from a task force",
+        season: 2,
+        episode: 1)
 }
 
 extension LinearGradient {
