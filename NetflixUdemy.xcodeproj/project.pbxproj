@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		A8342C43278CA48A0030644F /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8342C42278CA48A0030644F /* TopMoviePreview.swift */; };
 		A8342C45278E16B20030644F /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8342C44278E16B20030644F /* SmallVerticalButton.swift */; };
-		A8342C47278E1D520030644F /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8342C46278E1D520030644F /* WhiteButton.swift */; };
+		A8342C47278E1D520030644F /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8342C46278E1D520030644F /* PlayButton.swift */; };
+		A8342C4D279363060030644F /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8342C4C279363060030644F /* MovieDetail.swift */; };
+		A8342C4F27936F560030644F /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8342C4E27936F560030644F /* Episode.swift */; };
 		A8D892D7278AFB2E0025C0D3 /* NetflixUdemyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D892D6278AFB2E0025C0D3 /* NetflixUdemyApp.swift */; };
 		A8D892D9278AFB2E0025C0D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D892D8278AFB2E0025C0D3 /* ContentView.swift */; };
 		A8D892DB278AFB300025C0D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D892DA278AFB300025C0D3 /* Assets.xcassets */; };
@@ -25,7 +27,9 @@
 /* Begin PBXFileReference section */
 		A8342C42278CA48A0030644F /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		A8342C44278E16B20030644F /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
-		A8342C46278E1D520030644F /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
+		A8342C46278E1D520030644F /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		A8342C4C279363060030644F /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		A8342C4E27936F560030644F /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		A8D892D3278AFB2E0025C0D3 /* NetflixUdemy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixUdemy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D892D6278AFB2E0025C0D3 /* NetflixUdemyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixUdemyApp.swift; sourceTree = "<group>"; };
 		A8D892D8278AFB2E0025C0D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +54,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8342C48279362440030644F /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				A8D892E7278B02E70025C0D3 /* HomeView.swift */,
+				A8D892EF278B07C80025C0D3 /* HomeVM.swift */,
+			);
+			path = HomeViews;
+			sourceTree = "<group>";
+		};
+		A8342C49279362650030644F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8D892E9278B04190025C0D3 /* Movie.swift */,
+				A8342C4E27936F560030644F /* Episode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8342C4A2793627A0030644F /* HelpersView */ = {
+			isa = PBXGroup;
+			children = (
+				A8342C42278CA48A0030644F /* TopMoviePreview.swift */,
+				A8D892EB278B048F0025C0D3 /* StandardHomeMovie.swift */,
+				A8342C46278E1D520030644F /* PlayButton.swift */,
+				A8342C44278E16B20030644F /* SmallVerticalButton.swift */,
+			);
+			path = HelpersView;
+			sourceTree = "<group>";
+		};
+		A8342C4B279362A10030644F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A8D892ED278B04DD0025C0D3 /* GlobalHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		A8D892CA278AFB2E0025C0D3 = {
 			isa = PBXGroup;
 			children = (
@@ -71,15 +112,12 @@
 			children = (
 				A8D892D6278AFB2E0025C0D3 /* NetflixUdemyApp.swift */,
 				A8D892D8278AFB2E0025C0D3 /* ContentView.swift */,
-				A8D892E7278B02E70025C0D3 /* HomeView.swift */,
-				A8D892EF278B07C80025C0D3 /* HomeVM.swift */,
-				A8D892EB278B048F0025C0D3 /* StandardHomeMovie.swift */,
-				A8342C42278CA48A0030644F /* TopMoviePreview.swift */,
-				A8342C44278E16B20030644F /* SmallVerticalButton.swift */,
-				A8342C46278E1D520030644F /* WhiteButton.swift */,
-				A8D892ED278B04DD0025C0D3 /* GlobalHelpers.swift */,
-				A8D892E9278B04190025C0D3 /* Movie.swift */,
+				A8342C48279362440030644F /* HomeViews */,
+				A8342C4A2793627A0030644F /* HelpersView */,
+				A8342C49279362650030644F /* Model */,
+				A8342C4B279362A10030644F /* Helpers */,
 				A8D892DA278AFB300025C0D3 /* Assets.xcassets */,
+				A8342C4C279363060030644F /* MovieDetail.swift */,
 				A8D892DC278AFB300025C0D3 /* Preview Content */,
 			);
 			path = NetflixUdemy;
@@ -170,8 +208,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8D892EE278B04DD0025C0D3 /* GlobalHelpers.swift in Sources */,
+				A8342C4F27936F560030644F /* Episode.swift in Sources */,
 				A8D892E8278B02E70025C0D3 /* HomeView.swift in Sources */,
-				A8342C47278E1D520030644F /* WhiteButton.swift in Sources */,
+				A8342C47278E1D520030644F /* PlayButton.swift in Sources */,
 				A8D892F0278B07C80025C0D3 /* HomeVM.swift in Sources */,
 				A8D892D9278AFB2E0025C0D3 /* ContentView.swift in Sources */,
 				A8D892EC278B04900025C0D3 /* StandardHomeMovie.swift in Sources */,
@@ -179,6 +218,7 @@
 				A8D892EA278B04190025C0D3 /* Movie.swift in Sources */,
 				A8D892D7278AFB2E0025C0D3 /* NetflixUdemyApp.swift in Sources */,
 				A8342C45278E16B20030644F /* SmallVerticalButton.swift in Sources */,
+				A8342C4D279363060030644F /* MovieDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,62 +15,91 @@ extension GlobalHelpers {
         id: UUID().uuidString,
         name: "DARK",
         thumbnailURL: URL(string: "https://picsum.photos/200/301")!,
-        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"]
+        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"],
+        year: 2020,
+        rating: "TV-MA",
+        numberOfSeasons: 1
     )
     static let exampleMovie2 = Movie(
         id: UUID().uuidString,
         name: "DARK",
         thumbnailURL: URL(string: "https://picsum.photos/200/302")!,
-        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"]
+        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"],
+        year: 2020,
+        rating: "TV-MA",
+        numberOfSeasons: 2,
+        promotionHeadline: "Best Rated Show"
     )
     
     static let exampleMovie3 = Movie(
         id: UUID().uuidString,
         name: "DARK",
         thumbnailURL: URL(string: "https://picsum.photos/200/303")!,
-        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"]
+        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"],
+        year: 2020,
+        rating: "TV-MA",
+        numberOfSeasons: 3
     )
     static let exampleMovie4 = Movie(
         id: UUID().uuidString,
         name: "DARK",
         thumbnailURL: URL(string: "https://picsum.photos/200/304")!,
-        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"]
+        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"],
+        year: 2020,
+        rating: "TV-MA",
+        numberOfSeasons: 4,
+        promotionHeadline: "New episodes coming soon"
     )
     static let exampleMovie5 = Movie(
         id: UUID().uuidString,
         name: "DARK",
         thumbnailURL: URL(string: "https://picsum.photos/200/305")!,
-        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"]
+        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"],
+        year: 2020,
+        rating: "TV-MA",
+        numberOfSeasons: 5
     )
     static let exampleMovie6 = Movie(
         id: UUID().uuidString,
         name: "DARK",
         thumbnailURL: URL(string: "https://picsum.photos/200/306")!,
-        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"]
+        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"],
+        year: 2020,
+        rating: "TV-MA",
+        numberOfSeasons: 6,
+        promotionHeadline: "Whatch Season 6 Now"
     )
     static let exampleMovie7 = Movie(
         id: UUID().uuidString,
         name: "DARK",
         thumbnailURL: URL(string: "https://picsum.photos/200/307")!,
-        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"]
+        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"],
+        year: 2020,
+        rating: "TV-MA"
     )
     static let exampleMovie8 = Movie(
         id: UUID().uuidString,
         name: "DARK",
         thumbnailURL: URL(string: "https://picsum.photos/200/308")!,
-        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"]
+        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"],
+        year: 2020,
+        rating: "TV-MA"
     )
     static let exampleMovie9 = Movie(
         id: UUID().uuidString,
         name: "DARK",
         thumbnailURL: URL(string: "https://picsum.photos/200/309")!,
-        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"]
+        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"],
+        year: 2020,
+        rating: "TV-MA"
     )
     static let exampleMovie10 = Movie(
         id: UUID().uuidString,
         name: "DARK",
         thumbnailURL: URL(string: "https://picsum.photos/200/310")!,
-        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"]
+        categories: ["Destopian", "Exciting", "Supenseful", "Sci-Fi TV"],
+        year: 2020,
+        rating: "TV-MA"
     )
     static let examples = [
         exampleMovie1,
