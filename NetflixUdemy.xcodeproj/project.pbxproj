@@ -12,6 +12,7 @@
 		A8342C47278E1D520030644F /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8342C46278E1D520030644F /* PlayButton.swift */; };
 		A8342C4D279363060030644F /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8342C4C279363060030644F /* MovieDetail.swift */; };
 		A8342C4F27936F560030644F /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8342C4E27936F560030644F /* Episode.swift */; };
+		A8A76F8D279A0F03006365EA /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A76F8C279A0F03006365EA /* CustomTabSwitcher.swift */; };
 		A8D892D7278AFB2E0025C0D3 /* NetflixUdemyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D892D6278AFB2E0025C0D3 /* NetflixUdemyApp.swift */; };
 		A8D892D9278AFB2E0025C0D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D892D8278AFB2E0025C0D3 /* ContentView.swift */; };
 		A8D892DB278AFB300025C0D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D892DA278AFB300025C0D3 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		A8342C46278E1D520030644F /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		A8342C4C279363060030644F /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		A8342C4E27936F560030644F /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		A8A76F8C279A0F03006365EA /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTabSwitcher.swift; path = NetflixUdemy/CustomTabSwitcher.swift; sourceTree = SOURCE_ROOT; };
 		A8D892D3278AFB2E0025C0D3 /* NetflixUdemy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixUdemy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D892D6278AFB2E0025C0D3 /* NetflixUdemyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixUdemyApp.swift; sourceTree = "<group>"; };
 		A8D892D8278AFB2E0025C0D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 		A8342C4A2793627A0030644F /* HelpersView */ = {
 			isa = PBXGroup;
 			children = (
+				A8A76F8C279A0F03006365EA /* CustomTabSwitcher.swift */,
 				A8342C42278CA48A0030644F /* TopMoviePreview.swift */,
 				A8D892EB278B048F0025C0D3 /* StandardHomeMovie.swift */,
 				A8342C46278E1D520030644F /* PlayButton.swift */,
@@ -216,6 +219,7 @@
 				A8D892EC278B04900025C0D3 /* StandardHomeMovie.swift in Sources */,
 				A8342C43278CA48A0030644F /* TopMoviePreview.swift in Sources */,
 				A8D892EA278B04190025C0D3 /* Movie.swift in Sources */,
+				A8A76F8D279A0F03006365EA /* CustomTabSwitcher.swift in Sources */,
 				A8D892D7278AFB2E0025C0D3 /* NetflixUdemyApp.swift in Sources */,
 				A8342C45278E16B20030644F /* SmallVerticalButton.swift in Sources */,
 				A8342C4D279363060030644F /* MovieDetail.swift in Sources */,
